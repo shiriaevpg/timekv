@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+4d7df36157ca23cc17b1242efb8872e3 proto/validation.pb.h
+557e2c27a67d8d93c41aabf507a52059 proto/ydb_common.pb.h
+cb2cfd66da4969c899192347c4f19549 proto/ydb_issue_message.pb.h
+4b534063769e3f513364f65083c76aff proto/ydb_keyvalue.pb.h
+73ee70c15e9cb6733445598ba5dac792 proto/ydb_operation.pb.h
+00fbd74f513b9a2c72b0f1b17a2f29be proto/ydb_status_codes.pb.h

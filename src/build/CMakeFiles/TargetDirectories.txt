@@ -1,0 +1,6 @@
+/Users/egorlitvinenk/students/timekv/default/src/build/CMakeFiles/ts-kv-blob.dir
+/Users/egorlitvinenk/students/timekv/default/src/build/CMakeFiles/edit_cache.dir
+/Users/egorlitvinenk/students/timekv/default/src/build/CMakeFiles/rebuild_cache.dir
+/Users/egorlitvinenk/students/timekv/default/src/build/proto/CMakeFiles/proto.dir
+/Users/egorlitvinenk/students/timekv/default/src/build/proto/CMakeFiles/edit_cache.dir
+/Users/egorlitvinenk/students/timekv/default/src/build/proto/CMakeFiles/rebuild_cache.dir

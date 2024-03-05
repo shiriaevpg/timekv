@@ -1,0 +1,2 @@
+/usr/bin/ar qc libproto.a CMakeFiles/proto.dir/ydb_operation.pb.cc.o CMakeFiles/proto.dir/ydb_keyvalue.pb.cc.o CMakeFiles/proto.dir/validation.pb.cc.o CMakeFiles/proto.dir/ydb_common.pb.cc.o CMakeFiles/proto.dir/ydb_issue_message.pb.cc.o CMakeFiles/proto.dir/ydb_status_codes.pb.cc.o
+/usr/bin/ranlib libproto.a

@@ -1,0 +1,82 @@
+[
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/cache/cache.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/cache/cache.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/cache/cache.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/level/level.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/level/level.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/level/level.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/main.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/main.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/main.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/memtable/memtable.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/memtable/memtable.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/memtable/memtable.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/metric-storage/metric_storage.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/metric-storage/metric_storage.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/metric-storage/metric_storage.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/model/aggregations.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/model/aggregations.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/model/aggregations.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/model/column.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/model/column.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/model/column.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/persistent-storage/disk_storage.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/persistent-storage/disk_storage.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/persistent-storage/disk_storage.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/persistent-storage/persistent_storage_manager.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/persistent-storage/persistent_storage_manager.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/persistent-storage/persistent_storage_manager.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build -I/Users/egorlitvinenk/students/timekv/default/src -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/ts-kv-blob.dir/storage/storage.cpp.o -c /Users/egorlitvinenk/students/timekv/default/src/storage/storage.cpp",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/storage/storage.cpp"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build/proto",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build/proto -I/Users/egorlitvinenk/students/timekv/default/src/proto -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/proto.dir/ydb_operation.pb.cc.o -c /Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_operation.pb.cc",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_operation.pb.cc"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build/proto",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build/proto -I/Users/egorlitvinenk/students/timekv/default/src/proto -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/proto.dir/ydb_keyvalue.pb.cc.o -c /Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_keyvalue.pb.cc",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_keyvalue.pb.cc"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build/proto",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build/proto -I/Users/egorlitvinenk/students/timekv/default/src/proto -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/proto.dir/validation.pb.cc.o -c /Users/egorlitvinenk/students/timekv/default/src/build/proto/validation.pb.cc",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/build/proto/validation.pb.cc"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build/proto",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build/proto -I/Users/egorlitvinenk/students/timekv/default/src/proto -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/proto.dir/ydb_common.pb.cc.o -c /Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_common.pb.cc",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_common.pb.cc"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build/proto",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build/proto -I/Users/egorlitvinenk/students/timekv/default/src/proto -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/proto.dir/ydb_issue_message.pb.cc.o -c /Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_issue_message.pb.cc",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_issue_message.pb.cc"
+},
+{
+  "directory": "/Users/egorlitvinenk/students/timekv/default/src/build/proto",
+  "command": "/usr/bin/clang++  -I/Users/egorlitvinenk/students/timekv/default/src/build/proto -I/Users/egorlitvinenk/students/timekv/default/src/proto -I/opt/homebrew/include  -fsanitize=address,leak,undefined -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu++2b -o CMakeFiles/proto.dir/ydb_status_codes.pb.cc.o -c /Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_status_codes.pb.cc",
+  "file": "/Users/egorlitvinenk/students/timekv/default/src/build/proto/ydb_status_codes.pb.cc"
+}
+]
