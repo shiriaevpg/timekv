@@ -1,6 +1,6 @@
 #pragma once
 
-#include "metric-storage/metric_storage.h"
+#include "../metric-storage/metric_storage.h"
 #include "model/model.h"
 
 #include <unordered_map>

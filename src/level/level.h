@@ -1,8 +1,8 @@
 #pragma once
 
-#include "model/column.h"
-#include "model/model.h"
-#include "persistent-storage/persistent_storage.h"
+#include "../model/column.h"
+#include "../model/model.h"
+#include "../persistent-storage/persistent_storage.h"
 
 namespace tskv {
 

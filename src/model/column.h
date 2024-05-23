@@ -5,7 +5,7 @@
 #include <memory>
 #include <optional>
 #include <vector>
-#include "model/model.h"
+#include "model.h"
 
 namespace tskv {
 

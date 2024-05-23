@@ -3,12 +3,13 @@
 #include <array>
 #include <chrono>
 #include <cstdint>
+#include <iterator>
 #include <memory>
 #include <optional>
 #include <vector>
 
-#include "model/column.h"
-#include "model/model.h"
+#include "../model/column.h"
+#include "../model/model.h"
 
 namespace tskv {
 
@@ -47,3 +48,19 @@ class Memtable {
 };
 
 }  // namespace tskv
+
+extern "C" {
+void tskvInit(tskv::Memtable::Options* options,
+              tskv::MetricOptions* metric_options);
+void tskvWrite(tskv::Record* data, long long sz);
+tskv::Memtable::ReadResult* Read(tskv::TimeRange*,
+                                 tskv::StoredAggregationType*);
+void tskvStop();
+void tskvParseColumn(tskv::Column*);
+long long tskvGetValSize();
+double* tskvGetArr();
+tskv::TimeRange* tskvBuildTimeRange(long long, long long);
+tskv::Memtable::Options* tskvGetOptions(long long interval, long long sz,
+                                        long long maxage, bool raw);
+tskv::MetricOptions* tskvGetMetricOptions(int* arr, long long sz);
+}

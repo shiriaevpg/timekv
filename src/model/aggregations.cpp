@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-#include "model/column.h"
+#include "../model/column.h"
 
 namespace tskv {
 

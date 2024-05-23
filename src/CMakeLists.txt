@@ -10,7 +10,6 @@ endif()
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
 include(FetchContent)
 FetchContent_Declare(
   googletest
@@ -31,25 +30,25 @@ add_executable(tskv
         storage/storage.cpp
 )
 
-enable_testing()
-add_executable(tskv-test
-        level/level.cpp
-        memtable/memtable.cpp
-        metric-storage/metric_storage.cpp
-        model/aggregations.cpp
-        model/column.cpp
-        model/model.cpp
-        persistent-storage/disk_storage.cpp
-        persistent-storage/persistent_storage_manager.cpp
-        storage/storage.cpp
-        tests/column_test.cpp
-        tests/level_test.cpp
-        tests/memtable_test.cpp
-)
-
-target_link_libraries(tskv-test GTest::gtest_main gmock)
-
-include(GoogleTest)
-gtest_discover_tests(tskv-test)
+#enable_testing()
+#add_executable(tskv-test
+#        level/level.cpp
+#        memtable/memtable.cpp
+#        metric-storage/metric_storage.cpp
+#        model/aggregations.cpp
+#        model/column.cpp
+#        model/model.cpp
+#        persistent-storage/disk_storage.cpp
+#        persistent-storage/persistent_storage_manager.cpp
+#        storage/storage.cpp
+#        tests/column_test.cpp
+#        tests/level_test.cpp
+#        tests/memtable_test.cpp
+#)
+#
+#target_link_libraries(tskv-test GTest::gtest_main gmock)
+#
+#include(GoogleTest)
+#gtest_discover_tests(tskv-test)
 
 

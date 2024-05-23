@@ -1,0 +1,7 @@
+write time: 0ms
+metric_count: 1, aggregation_window: 300000000, query_range: 3600000000 read rps: 100000
+metric_count: 1, aggregation_window: 300000000, query_range: 43200000000 read rps: 100000
+metric_count: 1, aggregation_window: 300000000, query_range: 3600000000 read rps: 100000
+metric_count: 5, aggregation_window: 300000000, query_range: 3600000000 read rps: 100000
+metric_count: 5, aggregation_window: 300000000, query_range: 43200000000 read rps: 100000
+metric_count: 5, aggregation_window: 300000000, query_range: 3600000000 read rps: 100000

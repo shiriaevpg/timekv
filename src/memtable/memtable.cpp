@@ -1,12 +1,15 @@
 #include "memtable.h"
 
 #include <algorithm>
+#include <cstddef>
+#include <cstdint>
 #include <memory>
 #include <string>
-#include "metric-storage/metric_storage.h"
-#include "model/aggregations.h"
-#include "model/column.h"
-#include "model/model.h"
+#include <vector>
+#include "../metric-storage/metric_storage.h"
+#include "../model/aggregations.h"
+#include "../model/column.h"
+#include "../model/model.h"
 
 namespace tskv {
 
@@ -167,3 +170,72 @@ size_t Memtable::GetBytesSize() const {
 }
 
 }  // namespace tskv
+
+extern "C" {
+tskv::Memtable* table;
+tskv::Column* curcolumn;
+
+void tskvInit(tskv::Memtable::Options* options,
+              tskv::MetricOptions* metric_options) {
+  table = new tskv::Memtable(*options, *metric_options);
+}
+
+tskv::Memtable::Options* tskvgetOptions(long long interval, long long sz,
+                                        long long maxage, bool raw) {
+  return new tskv::Memtable::Options(tskv::Duration(interval), sz, maxage, raw);
+}
+
+tskv::MetricOptions* tskvGetMetricOptions(int* arr, long long sz) {
+  std::vector<tskv::StoredAggregationType> vec(sz);
+  for (auto i = 0; i < sz; ++i) {
+    vec[i] = static_cast<tskv::StoredAggregationType>(arr[i]);
+  }
+  static tskv::MetricOptions opt;
+  opt.aggregation_types = vec;
+  return &opt;
+}
+
+void tskvWrite(tskv::Record* data, long long sz) {
+  std::vector<tskv::Record> arr(data, data + sz);
+  table->Write(arr);
+}
+
+tskv::Memtable::ReadResult* tskvRead(tskv::TimeRange* range, int type) {
+  static tskv::Memtable::ReadResult res =
+      table->Read(*range, static_cast<tskv::StoredAggregationType>(type));
+  curcolumn = &res.found;
+  return &res;
+}
+
+void tskvStop() {
+  delete table;
+}
+
+void tskvParseColumn(tskv::Column* col) {
+  curcolumn = col;
+}
+
+long long tskvGetValSize() {
+  return curcolumn->get()->GetValues().size();
+}
+
+double* tskvGetArr() {
+  std::vector<double> vec = curcolumn->get()->GetValues();
+  static double* arr = new double[vec.size()];
+  std::copy(vec.begin(), vec.end(), arr);
+  return arr;
+}
+
+tskv::TimeRange* tskvBuildTimeRange(long long a, long long b) {
+  return new tskv::TimeRange(
+      {static_cast<uint64_t>(a), static_cast<uint64_t>(b)});
+}
+
+tskv::Record* tskvGetRecords(long long* arr1, double* arr2, long long sz) {
+  //record = int64,double
+  static tskv::Record* records = new tskv::Record[sz];
+  for (auto i = 0; i < sz; ++i)
+    records[i] = tskv::Record(arr1[i], arr2[i]);
+  return records;
+}
+}

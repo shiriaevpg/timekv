@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <ostream>
 #include <random>
 #include <string>
 #include <vector>
@@ -245,6 +246,7 @@ double SingleGroupBy(tskv::Storage& storage, const tskv::TimeRange& time_range,
 int main() {
   tskv::Storage storage;
   auto [time_range, metric_ids, write_time] = Write(storage);
+  std::cout << metric_ids.size() << std::endl;
   std::cout << "write time: " << write_time << "ms" << std::endl;
   auto five_minutes = tskv::Duration::Minutes(5);
   auto one_hour = tskv::Duration::Hours(1);
@@ -257,7 +259,7 @@ int main() {
 
   std::vector<double> read_rps;
   read_rps.reserve(params.size());
-for (const auto& param : params) {
+  for (const auto& param : params) {
     read_rps.push_back(SingleGroupBy(storage, time_range, metric_ids, param));
   }
 

@@ -1,10 +1,13 @@
 #pragma once
 
 #include <memory>
-#include "memtable/memtable.h"
-#include "model/aggregations.h"
-#include "model/model.h"
-#include "persistent-storage/persistent_storage_manager.h"
+#include <vector>
+#include "../memtable/memtable.h"
+#include "../model/aggregations.h"
+#include "../model/model.h"
+#include "../persistent-storage/persistent_storage_manager.h"
+
+// #include "c_compat.h"
 
 namespace tskv {
 

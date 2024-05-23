@@ -1,8 +1,8 @@
 #pragma once
 
-#include "level/level.h"
-#include "model/column.h"
-#include "model/model.h"
+#include "../level/level.h"
+#include "../model/column.h"
+#include "../model/model.h"
 #include "persistent_storage.h"
 
 #include <memory>

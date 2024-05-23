@@ -1,0 +1,5 @@
+if(EXISTS "/home/pavel/Documents/code/project/timekv/src/make/tskv-test[1]_tests.cmake")
+  include("/home/pavel/Documents/code/project/timekv/src/make/tskv-test[1]_tests.cmake")
+else()
+  add_test(tskv-test_NOT_BUILT tskv-test_NOT_BUILT)
+endif()
